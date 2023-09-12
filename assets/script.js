@@ -7,13 +7,12 @@ const btnDepositar = document.querySelector("#btn-depositar");
 function getCurrentTime() {
   const data = new Date();
   const hora = data.getHours();
-  const minuto = data.getMinutes();
-  const segundo = data.getSeconds();
+  const minuto = String(data.getMinutes()).padStart(2, "0");
+  const segundo = String(data.getSeconds()).padStart(2, "0");
   const dia = data.toLocaleDateString();
 
   return { hora, minuto, segundo, dia };
 }
-
 function saldoAtualDeposito() {
   let valor = Number(prompt("Digite o valor total do seu dinheiro: "));
   saldoAtual.innerHTML = valor.toFixed(2);
@@ -46,11 +45,6 @@ btnDepositar.addEventListener("click", () => {
   const valor = Number(valorInput.value);
   const saldo = Number(saldoAtual.innerHTML);
   const currentTime = getCurrentTime();
-
-  if (valorInput.value === "") {
-    alert("Digite um valor!!");
-    return;
-  }
 
   saldoAtual.innerHTML = (saldo + valor).toFixed(2);
   extratoConta.innerHTML += `<p class="depos" >Depositou R$${valor.toFixed(
