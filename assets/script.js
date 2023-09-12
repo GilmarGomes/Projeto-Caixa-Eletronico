@@ -46,6 +46,11 @@ btnDepositar.addEventListener("click", () => {
   const saldo = Number(saldoAtual.innerHTML);
   const currentTime = getCurrentTime();
 
+  if (valorInput.value === "") {
+    alert("Digite um valor!!");
+    return;
+  }
+
   saldoAtual.innerHTML = (saldo + valor).toFixed(2);
   extratoConta.innerHTML += `<p class="depos" >✅ Depositou R$${valor.toFixed(
     2
