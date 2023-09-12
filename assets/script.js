@@ -30,11 +30,11 @@ btnSacar.addEventListener("click", () => {
 
   if (saldo > 0 && saldo >= valor) {
     saldoAtual.innerHTML = (saldo - valor).toFixed(2);
-    extratoConta.innerHTML += `<p class="saque" >Sacou R$${valor.toFixed(
+    extratoConta.innerHTML += `<p class="saque" > ✅ Sacou R$${valor.toFixed(
       2
     )} às ${currentTime.hora}:${currentTime.minuto}:${
       currentTime.segundo
-    } do dia ${currentTime.dia}</p>`;
+    } do dia ${currentTime.dia} </p>`;
     valorInput.value = "";
     valorInput.focus();
   } else {
@@ -47,7 +47,7 @@ btnDepositar.addEventListener("click", () => {
   const currentTime = getCurrentTime();
 
   saldoAtual.innerHTML = (saldo + valor).toFixed(2);
-  extratoConta.innerHTML += `<p class="depos" >Depositou R$${valor.toFixed(
+  extratoConta.innerHTML += `<p class="depos" >✅ Depositou R$${valor.toFixed(
     2
   )} às ${currentTime.hora}:${currentTime.minuto}:${
     currentTime.segundo
