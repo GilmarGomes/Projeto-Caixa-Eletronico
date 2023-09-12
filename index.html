@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caixa Eletrônico</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <h1>Caixa Eletrônico</h1>
+    <h2>Bem vindo ao Caixa Eletrônico</h2>
+    <div>
+      <h3>Saldo Atual R$: <span id="saldoAtual"></span></h3>
+      <form action="">
+        <input
+          type="number"
+          name="valor"
+          id="valor"
+          required
+          placeholder="Digite o valor"
+        />
+        <input type="button" value="Sacar" id="btn-sacar" />
+        <input type="button" value="Depositar" id="btn-depositar" />
+      </form>
+      <div id="extratoConta"></div>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

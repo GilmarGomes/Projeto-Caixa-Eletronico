@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin-left: -5px;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+div {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+form {
+  margin-top: 10px;
+}
+
+input[type="number"] {
+  width: 100%;
+  margin-left: -12px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="button"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.depos {
+  color: rgb(11, 150, 104);
+}
+.saque {
+  color: rgb(255, 0, 0);
+}
+
+input[type="button"]:hover {
+  background-color: #555;
+}
+
+#extratoConta {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: left;
+}
+
+#extratoConta p {
+  margin: 5px 0;
+}
