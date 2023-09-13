@@ -23,7 +23,7 @@ btnSacar.addEventListener("click", () => {
   const saldo = Number(saldoAtual.innerHTML);
   const currentTime = getCurrentTime();
 
-  if (valorInput.value === "") {
+  if (valorInput.value === "" || valorInput.value < 1) {
     alert("Digite um valor!!");
     return;
   }
@@ -46,7 +46,7 @@ btnDepositar.addEventListener("click", () => {
   const saldo = Number(saldoAtual.innerHTML);
   const currentTime = getCurrentTime();
 
-  if (valorInput.value === "") {
+  if (valorInput.value === "" || valorInput.value < 1) {
     alert("Digite um valor!!");
     return;
   }
